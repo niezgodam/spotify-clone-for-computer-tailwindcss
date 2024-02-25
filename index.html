@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://niezgodam.github.io/spotify-clone-for-computer-tailwindcss/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="w-auto h-auto bg-zinc-900 grid grid-cols-10 lg:h-[1200px] xl:h-[1400px]">
+
+    <!--Left nav-->
+    <div class="w-32 h-full bg-neutral-900">
+      <!--Home,browse,radio nav-->
+      <div class="">
+        <div class="grid h-32 grid-rows-3">
+          <!--Home-->
+          <span class="flex mt-4 ml-3 font-medium text-white mt">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            Home
+          </span>
+          <!--Browse-->
+          <span class="flex mt-4 ml-3 font-medium text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+            </svg>
+            Browse
+          </span>
+          <!--Radio-->
+          <span class="flex mt-4 ml-3 font-medium text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.651a3.75 3.75 0 010-5.303m5.304 0a3.75 3.75 0 010 5.303m-7.425 2.122a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.007H12V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            Radio
+          </span>
+        </div>
+        <!--Your library-->
+        <div class="grid row-start-2">
+          <br>
+          <ul class="mt-3 ml-3">
+            <li class="pb-2 font-bold text-slate-400">Your library</li>
+            <li class="mb-2 text-sm font-medium text-white">Made For You</li>
+            <li class="mb-2 text-sm font-medium text-white">Recently Played</li>
+            <li class="mb-2 text-sm font-medium text-white">Liked Songs</li>
+            <li class="mb-2 text-sm font-medium text-white">Albums</li>
+            <li class="mb-2 text-sm font-medium text-white">Artists</li>
+            <li class="mb-2 text-sm font-medium text-white">Podcasts</li>
+          </ul>
+        </div>
+        <!--Playlists-->
+        <div class="grid row-start-2">
+          <br>
+          <ul class="mt-3 ml-3">
+            <li class="pb-2 font-bold text-slate-400">Playlists</li>
+            <li class="mb-2 text-sm font-medium text-white">Acoustic Hits</li>
+            <li class="mb-2 text-sm font-medium text-white">Acoustic Covers</li>
+            <li class="mb-2 text-sm font-medium text-white">Discover Weekly</li>
+            <li class="mb-2 text-sm font-medium text-white">Hot Hits Canada</li>
+            <li class="mb-2 text-sm font-medium text-white">90's Hip-Hop</li>
+            <li class="mb-2 text-sm font-medium text-white">90s SMash Hits</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Right nav-->
+    <div class="grid w-32 h-full col-start-10 grid-rows-6 sm:-ml-20 md:-ml-14 lg:mt-11 xl:-ml-2">
+      <div class="relative flex bottom-28">
+        <button class="relative flex items-center justify-center w-32 text-white focus:outline-none group/maslo">
+          <span class="mr-3 hover:bg-zinc-700">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:w-8 lg:h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </span>
+          <p class="mr-5 lg:text-lg">user</p>
+          <!--Drop menu-->
+          <span class="pl-1 border-l hover:bg-zinc-700">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 lg:w-8 lg:h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+          <div class="absolute hidden min-w-full mt-1 bg-white rounded shadow-md group-hover/maslo:block top-full w-max">
+            <ul class="-mt-32 text-left border rounded border-zinc-700 lg:-mt-16 xl:-mt-24">
+              <li class="px-4 border-b bg-zinc-700 hover:bg-gray-800 border-zinc-800">1</li>  
+              <li class="px-4 border-b bg-zinc-700 hover:bg-gray-800 border-zinc-800">2</li> 
+              <li class="px-4 border-b bg-zinc-700 hover:bg-gray-800 border-zinc-800">3</li> 
+              <li class="px-4 border-b bg-zinc-700 hover:bg-gray-800 border-zinc-800">4</li> 
+              <li class="px-4 border-b bg-zinc-700 hover:bg-gray-800 border-zinc-800">5</li> 
+            </ul>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!--Middle nav-->
+    <div class="w-80 h-[1600px] grid col-start-6 grid-rows-2 row-start-1 place-self-center relative mt-32 -ml-16 lg:w-[800px] lg:max-w-xl lg:h-[1000px] lg:self-start xl:max-w-4xl xl:h-[1200px] 2xl:max-w-6xl 2xl:w-[1200px]">
+      <div>
+        <div class="w-full h-12 ml-3 text-3xl font-semibold text-white">
+          Home
+        </div>
+        <div class="w-full h-10 ml-3 text-3xl font-semibold text-white place-self-start">
+          Recent played
+        </div>
+  
+        <!--For songs-->
+        <div class="mx-3 mt-2 lg:grid lg:grid-cols-3 lg:gap-3 lg:w-full xl:absolute xl:mb">
+  
+          <!--Main container for song-->
+          <div class="w-full h-56 mb-32 lg:col-start-1">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/239/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Acoustic Pop Covers
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400">
+              Amazing Accustic Covers update every week
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase">
+              6678 Followers
+            </div>
+          </div>
+  
+  
+          <div class="w-full h-56 mb-32 lg:col-start-2">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/241/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              On the road
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400">
+              Best songs for mountain climbing
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase">
+              2459608 Followers
+            </div>
+          </div>
+  
+          <div class="w-full h-56 mb-32 lg:col-start-3">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/240/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Sadness
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400">
+              Most beautiful capibara songs
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase">
+              7978 Followers
+            </div>
+          </div>
+  
+          <div class="w-full h-56 lg:col-start-1 lg:row-start-2 lg:-mt-16 xl:-mt-2">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/242/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Summer evening nostalgic
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400 lg:pt-4">
+              Amazing Songs for summer evening | New songs every day!
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase lg:pt-10">
+              6678 Followers
+            </div>
+          </div>
+  
+  
+  
+          <div class="hidden w-full h-56 lg:block lg:col-start-2 lg:row-start-2 lg:-mt-16 xl:-mt-2">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/243/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Spring vibes
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400 lg:pt-4">
+              New Adventure Playlist! Check this!
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase lg:pt-10">
+              214458 Followers
+            </div>
+          </div>
+  
+          <div class="hidden w-full h-56 lg:block lg:col-start-3 lg:row-start-2 lg:-mt-16 xl:-mt-2">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/247/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Desert playlist
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400 lg:pt-4">
+              Chill & Relax <br>
+              Best for Stress Relief and Heal
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase lg:pt-10">
+              573128 Followers
+            </div>
+          </div>
+  
+          <div class="hidden w-full h-56 mb-32 lg:block lg:col-start-1 lg:mt-24 xl:mt-40">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/100/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Summer For Everyone
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400">
+              Amazing Vacation on The Beach!!!
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase">
+              1271238 Followers
+            </div>
+          </div>
+  
+          <div class="hidden w-full h-56 mb-32 lg:block lg:col-start-2 lg:mt-24 xl:mt-40">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/106/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Flower Playlist
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400">
+              Feel this Moment!
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase">
+              511678 Followers
+            </div>
+          </div>
+  
+          <div class="hidden w-full h-56 mb-32 lg:block lg:col-start-3 lg:mt-24 xl:col-start-3 xl:row-start-3 xl:mt-40">
+            <!--Picture-->
+            <div class="">
+              <img src="https://picsum.photos/id/109/300/227">
+            </div>
+            <!--Album-->
+            <div class="w-full h-8 mt-1 font-medium text-white">
+              Nature Playlist
+            </div>
+            <!--Description-->
+            <div class="w-full h-12 text-gray-400">
+              Relax with music outside!
+            </div>
+            <!--Followers-->
+            <div class="w-full h-8 mt-2 text-xs text-gray-400 uppercase">
+              21333678 Followers
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  
+  
+    <!--Head nav-->
+    <div class="flex w-auto col-start-3 col-end-9 ml-2 row-span-full h-14">
+      <div class="flex items-center w-16 mt-2 text-white md:-ml-7 lg:-ml-20 2xl:-ml-44">
+        <!--Left arrow-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mt-2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+        <!--Right arrow-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mt-2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </div>
+      <!--All of search-->
+      <div class="flex mt-2 ml-6">
+        <div class="w-3/4 mt-2 mb-2 ml-3 rounded-full">
+            <button class="absolute flex items-center w-20 h-10 bg-white rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </button>
+            <input class="absolute h-10 ml-10 text-lg rounded-full outline-none w-44 md:w-1/3" type="search" placeholder="Search"></input>
+        </div>
+      </div>
+    </div>
+  
+    <!--Static down-->
+    <div class="fixed col-start-1">
+      <div class="fixed bottom-0 grid w-full h-16 grid-cols-6 col-start-1 bg-zinc-700 place-self-end">
+        <!--Photo-->
+        <div class="h-full ml-4 w-14">
+          <img src="https://picsum.photos/60/69" class="p-2">
+        </div>
+        <!--Name of song and artist-->
+        <div class="grid w-24 h-full col-start-2 text-white -ml-9 lg:-ml-24 xl:-ml-32 2xl:-ml-44">
+          <span class="pt-3 pl-2 text-xs font-bold">Name of Song</span>
+          <span class="pl-2 text-xs">Artist Name</span>
+        </div>
+        <!--Previous,Play,Next-->
+        <div class="grid w-auto h-full col-start-3 col-end-6 -ml-9 xl:mr-44">
+          <div class="grid w-full h-8 grid-cols-5 pt-2 md:pl-8 md:pr-8 lg:pl-16 lg:pr-16">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="self-center w-6 h-6 ml-12 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="self-center w-6 h-6 text-white justify-self-center">
+              <path d="M9.195 18.44c1.25.713 2.805-.19 2.805-1.629v-2.34l6.945 3.968c1.25.714 2.805-.188 2.805-1.628V8.688c0-1.44-1.555-2.342-2.805-1.628L12 11.03v-2.34c0-1.44-1.555-2.343-2.805-1.629l-7.108 4.062c-1.26.72-1.26 2.536 0 3.256l7.108 4.061z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="transparent" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="self-center w-6 h-6 text-white justify-self-center">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="self-center w-6 h-6 text-white justify-self-center">
+              <path d="M5.055 7.06c-1.25-.714-2.805.189-2.805 1.628v8.123c0 1.44 1.555 2.342 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.342 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256L14.805 7.06C13.555 6.346 12 7.25 12 8.688v2.34L5.055 7.06z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="self-center w-6 h-6 col-end-6 mr-12 text-white justify-self-end">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+            </svg>
+          </div>
+          <!--Music time line-->
+          <div class="flex items-center w-full h-8 place-content-center">
+            <h1 class="pr-4 text-xs text-white">1:20</h1>
+            <div class="w-3/4 h-1 bg-white rounded-full"></div>
+            <h1 class="pl-4 text-xs text-white">3:21</h1>
+          </div>
+        </div>
+        <!--Right site items on static footer-->
+        <div class="flex items-center w-full h-16 space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+          </svg>
+          <div class="w-6 h-1 bg-white rounded-full md:w-8 lg:w-16"></div>
+  
+        </div>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
